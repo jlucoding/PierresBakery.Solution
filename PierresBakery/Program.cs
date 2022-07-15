@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using PierresBakery.Models;
 
-namespace PierresBakery
+
+namespace PierresBakery.Models
 {
   public class Program
   {
