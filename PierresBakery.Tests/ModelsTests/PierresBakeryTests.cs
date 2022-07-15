@@ -40,6 +40,28 @@ namespace PierresBakery.Tests
       Assert.AreEqual(quantity, result);
     }
 
+    [TestMethod]
+    public void SetQuantity_SetQuantityOfBread_Integer()
+    {
+      int quantity = 2;
+      Bread newBread = new Bread(quantity);
+      int updatedQuantity = 5;
+      newBread.Quantity = updatedQuantity;
+      int result = newBread.Quantity;
+      Assert.AreEqual(updatedQuantity, result);
+    }
+
+    [TestMethod]
+    public void SetQuantity_SetQuantityOfPastry_Integer()
+    {
+      int quantity = 2;
+      Pastry newPastry = new Pastry(quantity);
+      int updatedQuantity = 5;
+      newPastry.Quantity = updatedQuantity;
+      int result = newPastry.Quantity;
+      Assert.AreEqual(updatedQuantity, result);
+    }    
+
 
   }
   
