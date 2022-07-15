@@ -23,42 +23,42 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetQuantity_ReturnQuantityOfBread_Double()
+    public void GetQuantity_ReturnQuantityOfBread_Integer()
     {
-      double quantity = 2;
+      int quantity = 2;
       Bread newBread = new Bread(quantity);
-      double result = newBread.Quantity;
+      int result = newBread.Quantity;
       Assert.AreEqual(quantity, result);
     }
 
     [TestMethod]
-    public void GetQuantity_ReturnQuantityOfPastry_Double()
+    public void GetQuantity_ReturnQuantityOfPastry_Integer()
     {
-      double quantity = 2;
+      int quantity = 2;
       Pastry newPastry = new Pastry(quantity);
-      double result = newPastry.Quantity;
+      int result = newPastry.Quantity;
       Assert.AreEqual(quantity, result);
     }
 
     [TestMethod]
-    public void SetQuantity_SetQuantityOfBread_Double()
+    public void SetQuantity_SetQuantityOfBread_Integer()
     {
-      double quantity = 2;
+      int quantity = 2;
       Bread newBread = new Bread(quantity);
-      double updatedQuantity = 5;
+      int updatedQuantity = 5;
       newBread.Quantity = updatedQuantity;
-      double result = newBread.Quantity;
+      int result = newBread.Quantity;
       Assert.AreEqual(updatedQuantity, result);
     }
 
     [TestMethod]
-    public void SetQuantity_SetQuantityOfPastry_Double()
+    public void SetQuantity_SetQuantityOfPastry_Integer()
     {
-      double quantity = 2;
+      int quantity = 2;
       Pastry newPastry = new Pastry(quantity);
-      double updatedQuantity = 5;
+      int updatedQuantity = 5;
       newPastry.Quantity = updatedQuantity;
-      double result = newPastry.Quantity;
+      int result = newPastry.Quantity;
       Assert.AreEqual(updatedQuantity, result);
     }    
 
