@@ -7,7 +7,7 @@ namespace PierresBakery.Models
     //properties
     public int Quantity {get; set;}
     private static double _Price = 2;
-    private double _Buy3For5;
+    // private double _Buy3For5;
     
     //constructor
     public Pastry(int quantity)
@@ -28,18 +28,9 @@ namespace PierresBakery.Models
       double pastryTotalCost = 0;
       for (int index = 0; index <= Quantity; index++)
       {
-        if (index == 0)
-        {
-          pastryTotalCost += 0;
-        }
-        else
-        {
-          pastryTotalCost += _Price;
-        }
-        return pastryTotalCost;
+        pastryTotalCost += _Price;
       }
+      return pastryTotalCost;
     }
-
-
   }
 }

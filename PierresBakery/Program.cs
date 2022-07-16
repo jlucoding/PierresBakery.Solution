@@ -13,7 +13,7 @@ namespace PierresBakery.Models
       string firstResponse = Console.ReadLine();
       if (firstResponse != "yes" && firstResponse != "no")
       {
-        Console.WriteLine("Please let me know if I can get you anything by saying yes or no. We have pastries and breads.");
+        Console.WriteLine("Please let me know if I can get you anything by saying yes or no. We have pastries and bread.");
       }
       else if (firstResponse == "no")
       {
@@ -21,7 +21,7 @@ namespace PierresBakery.Models
       }
       else
       {
-        Console.WriteLine("How many pastries would you like and how many breads would you like?");
+        Console.WriteLine("How many pastries would you like and how many loafs of bread would you like?");
       }
     }
   }

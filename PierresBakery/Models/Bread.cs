@@ -7,7 +7,7 @@ namespace PierresBakery.Models
     //properties
     public int Quantity {get; set;}
     private static double _Price = 5;
-    private double _Buy2Get1Free;
+    // private double _Buy2Get1Free;
 
     //constructor
     public Bread(int quantity)
@@ -25,16 +25,12 @@ namespace PierresBakery.Models
 
     public double BreadCost()
     {
-      double breadTotal = 0;
+      double breadTotalCost = 0;
       for (int index = 0; index <= Quantity; index++)
       {
-        if (index == 0)
-        {
-          breadTotal += 0;
-        }
+        breadTotalCost += _Price;
       }
+      return breadTotalCost;
     }
-
-
   }
 }
