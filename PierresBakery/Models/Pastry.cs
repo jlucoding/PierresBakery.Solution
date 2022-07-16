@@ -26,7 +26,7 @@ namespace PierresBakery.Models
     public double PastryCost()
     {
       double pastryTotalCost = 0;
-      for (int index = 0; index <= Quantity; index++)
+      for (int index = 1; index <= Quantity; index++)
       {
         pastryTotalCost += _Price;
       }

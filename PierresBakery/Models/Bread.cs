@@ -1,4 +1,4 @@
-using System;
+// using System;
 
 namespace PierresBakery.Models
 {
@@ -26,7 +26,7 @@ namespace PierresBakery.Models
     public double BreadCost()
     {
       double breadTotalCost = 0;
-      for (int index = 0; index <= Quantity; index++)
+      for (int index = 1; index <= Quantity; index++)
       {
         breadTotalCost += _Price;
       }
