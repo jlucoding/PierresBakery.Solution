@@ -73,43 +73,43 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void PastryCost_CostOfOnePastry_Integer()
     {
-      int pastryQuantity = 1;
-      double pastryCost = 2;
+      int quantity = 1;
+      double cost = 2;
 
-      Pastry pastryOrder = new Pastry(pastryQuantity);
+      Pastry order = new Pastry(quantity);
 
-      Assert.AreEqual(pastryCost, pastryOrder.PastryCost());
+      Assert.AreEqual(cost, order.PastryCost());
     }
 
     public void PastryCost_CostOfTwoPastry_Integer()
     {
-      int pastryQuantity = 2;
-      double pastryCost = 4;
+      int quantity = 2;
+      double cost = 4;
 
-      Pastry pastryOrder = new Pastry(pastryQuantity);
+      Pastry order = new Pastry(quantity);
 
-      Assert.AreEqual(pastryCost, pastryOrder.PastryCost());
+      Assert.AreEqual(cost, order.PastryCost());
     }
 
     [TestMethod]
     public void BreadCost_CostOfOneBread_Integer()
     {
-      int breadQuantity = 1;
-      double breadCost = 5;
+      int quantity = 1;
+      double cost = 5;
 
-      Bread breadOrder = new Bread(breadQuantity);
+      Bread order = new Bread(quantity);
 
-      Assert.AreEqual(breadCost, breadOrder.BreadCost());
+      Assert.AreEqual(cost, order.BreadCost());
     }
 
     public void BreadCost_CostOfTwoBread_Integer()
     {
-      int breadQuantity = 2;
-      double breadCost = 10;
+      int quantity = 2;
+      double cost = 10;
 
-      Bread breadOrder = new Bread(breadQuantity);
+      Bread order = new Bread(quantity);
 
-      Assert.AreEqual(breadCost, breadOrder.BreadCost());
+      Assert.AreEqual(cost, order.BreadCost());
     }
 
   }
