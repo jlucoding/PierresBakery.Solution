@@ -6,29 +6,29 @@ namespace PierresBakery.Models
   {  
     //properties
     public int Quantity {get; set;}
-    private static double _Price = 2;
+    private static double _Cost = 2;
     // private double _Buy3For5;
     
     //constructor
     public Pastry(int quantity)
     {
       Quantity = quantity;
-      _Price = Price;
+      _Cost = Cost;
       // _Buy3For5;
     }
 
-    public static double Price
+    public static double Cost
     {
-      get { return _Price; }
-      set { _Price = value; }
+      get { return _Cost; }
+      set { _Cost = value; }
     }
 
     public double PastryCost()
     {
       double pastryTotalCost = 0;
-      for (int index = 1; index <= Quantity; index++)
+      for (int index = 0; index <= Quantity; index++)
       {
-        pastryTotalCost += _Price;
+        pastryTotalCost = Quantity * _Cost;
       }
       return pastryTotalCost;
     }

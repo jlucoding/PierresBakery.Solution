@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using System;
-// using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 using PierresBakery.Models;
 
 namespace PierresBakery.Tests
@@ -106,6 +106,27 @@ namespace PierresBakery.Tests
     {
       int quantity = 2;
       double cost = 10;
+
+      Bread order = new Bread(quantity);
+
+      Assert.AreEqual(cost, order.BreadCost());
+    }
+
+    public void PastryCost_CostOfNoPastry_Integer()
+    {
+      int quantity = 0;
+      double cost = 0;
+
+      Pastry order = new Pastry(quantity);
+
+      Assert.AreEqual(cost, order.PastryCost());
+    }
+
+    [TestMethod]
+    public void BreadCost_CostOfNoBread_Integer()
+    {
+      int quantity = 0;
+      double cost = 0;
 
       Bread order = new Bread(quantity);
 
