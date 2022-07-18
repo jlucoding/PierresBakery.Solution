@@ -133,6 +133,49 @@ namespace PierresBakery.Tests
       Assert.AreEqual(cost, order.BreadCost());
     }
 
+    [TestMethod]
+    public void BreadCost_CostOfThreeBread_Integer()
+    {
+      int quantity = 3;
+      double cost = 10;
+
+      Bread order = new Bread(quantity);
+
+      Assert.AreEqual(cost, order.BreadCost());
+    }
+
+    [TestMethod]
+    public void PastryCost_CostOfThreePastry_Integer()
+    {
+      int quantity = 3;
+      double cost = 5;
+
+      Pastry order = new Pastry(quantity);
+
+      Assert.AreEqual(cost, order.PastryCost());
+    }
+
+    [TestMethod]
+    public void BreadCost_CostOfFourBread_Integer()
+    {
+      int quantity = 4;
+      double cost = 15;
+
+      Bread order = new Bread(quantity);
+
+      Assert.AreEqual(cost, order.BreadCost());
+    }
+
+    [TestMethod]
+    public void PastryCost_CostOfFourPastry_Integer()
+    {
+      int quantity = 4;
+      double cost = 7;
+
+      Pastry order = new Pastry(quantity);
+
+      Assert.AreEqual(cost, order.PastryCost());
+    }
+
   }
-  
 }
