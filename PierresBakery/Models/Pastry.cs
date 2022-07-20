@@ -5,14 +5,14 @@ namespace PierresBakery.Models
   public class Pastry
   {  
     //properties
-    public int Quantity {get; set;}
+    public int PastryQuantity {get; set;}
     private static double _Cost = 2;
     private double _ThirdOneHalfOff;
     
     //constructor
-    public Pastry(int quantity)
+    public Pastry(int pastryQuantity)
     {
-      Quantity = quantity;
+      PastryQuantity = pastryQuantity;
       _Cost = Cost;
       _ThirdOneHalfOff = 0.5;
     }
@@ -26,7 +26,7 @@ namespace PierresBakery.Models
     public double PastryCost()
     {
       double pastryTotalCost = 0;
-      for (int index = 0; index <= Quantity; index++)
+      for (int index = 0; index <= PastryQuantity; index++)
         if (index == 0)
         {
           pastryTotalCost += 0;

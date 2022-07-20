@@ -5,14 +5,14 @@ namespace PierresBakery.Models
   public class Bread
   {
     //properties
-    public int Quantity {get; set;}
+    public int BreadQuantity {get; set;}
     private static double _Cost = 5;
     private double _ThirdOneFree;
 
     //constructor
-    public Bread(int quantity)
+    public Bread(int breadQuantity)
     {
-      Quantity = quantity;
+      BreadQuantity = breadQuantity;
       _Cost = Cost;
       _ThirdOneFree = 0;
     }
@@ -26,7 +26,7 @@ namespace PierresBakery.Models
     public double BreadCost()
     {
       double breadTotalCost = 0;
-      for (int index = 0; index <= Quantity; index++)
+      for (int index = 0; index <= BreadQuantity; index++)
         if (index == 0)
         {
           breadTotalCost += 0;

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GkeNza0zqYHKSNQJXiO6pKbUykV2TQUpdPWB1zG5HhEMMkkCg3bLGArK3hzbWPR8suaFq2eQv0sD0aEOH6tHRA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jonjo\\Desktop\\PierresBakery.Solution\\PierresBakery.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonjo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
